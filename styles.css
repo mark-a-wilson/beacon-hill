@@ -310,4 +310,5 @@ Calendars
 .calendarWrapper {
     margin: 30px auto;
     text-align: center;
+    overflow-x: scroll;
 }
