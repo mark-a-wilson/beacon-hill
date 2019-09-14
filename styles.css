@@ -101,6 +101,7 @@ Sidebar menu
     transform: translateX(-270px);
     transition: transform 250ms ease-in-out;
     background: linear-gradient(180deg, #FF7D00 0%, #F2F2F2 100%);
+    -webkit-overflow-scrolling: touch;
 }
 .sidebarMenuInner{
     margin:0;
