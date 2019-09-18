@@ -110,17 +110,18 @@ Sidebar menu
 }
 .sidebarMenuInner li{
     list-style: none;
-    color: #d9d9d9;
+    color: #cccccc;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: normal;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     cursor: default;
 }
 .sidebarMenuInner li.heading {
     padding: 7px 20px;
 }
 .sidebarMenuInner li.brand {
+    color: #fff;
     text-align: center;
     font-size: 43px;
     font-family: 'Bosox';
@@ -131,25 +132,25 @@ Sidebar menu
     display: block;
     font-family: 'Futura';
     font-size: 12px;
-    color: #f8f8f8;
 }
 .sidebarMenuInner li.subMenu a {
     display: block;
-    color: #d9d9d9;
+    color: #cccccc;
     cursor: pointer;
     text-decoration: none;
     padding: 7px 40px;
 }
 .sidebarMenuInner li a{
     display: block;
-    color: #d9d9d9;
+    color: #cccccc;
     cursor: pointer;
     text-decoration: none;
     padding: 7px 20px; 
 }
 .sidebarMenuInner li a:hover {
     color: #fff;
-    background-color: #FF7D00;
+//    background-color: rgba(255, 125, 0, 0.2);
+    background-color: #ff7d00;
 }
 input[type="checkbox"]:checked ~ #sidebarMenu {
     transform: translateX(0);
