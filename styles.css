@@ -310,6 +310,11 @@ Calendars
     text-align: center;
     overflow-x: scroll;
 }
+@media screen and (max-width: 500px) {
+    .calendarWrapper {
+        overflow-x: hidden;
+    }
+}
 /* ------- 
 Video Background 
 --------- */
