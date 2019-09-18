@@ -18,11 +18,9 @@ html {
 
 }
 body {
-    background: #fff;
     padding: 0;
     margin: 0;
     font-family: 'Futura', sans-serif;
-    color: #333;
 }
 .main {
     margin: 0 auto;
@@ -54,6 +52,9 @@ body {
     font-weight: bold;
     letter-spacing: 1.25px;
 }
+hr {
+    border-color: #000;
+}
 /* ----------------
 Typography
 ---------------- */
@@ -77,7 +78,7 @@ Header
     margin: 0 auto;
     width: 100%;
     max-width: 100%;
-    background: linear-gradient(45deg, #FF7D00 0%, #F2F2F2 100%);
+    background: #262626;
     position: fixed;
     height: 60px!important;
     overflow: hidden;
@@ -96,11 +97,11 @@ Sidebar menu
     height: 100%;
     position: fixed;
     left: 0;
-    width: 270px;
+    width: 315px;
     overflow-y: auto;
-    transform: translateX(-270px);
+    transform: translateX(-315px);
     transition: transform 250ms ease-in-out;
-    background: linear-gradient(180deg, #FF7D00 0%, #F2F2F2 100%);
+    background: #262626;
     -webkit-overflow-scrolling: touch;
 }
 .sidebarMenuInner{
@@ -109,19 +110,21 @@ Sidebar menu
 }
 .sidebarMenuInner li{
     list-style: none;
-    color: #333;
+    color: #d9d9d9;
     text-transform: uppercase;
-    font-family: 'Bosox';
-    font-size: 20px;
+    font-size: 15px;
     font-weight: normal;
     letter-spacing: 2px;
-    padding: 7px 20px;
     cursor: default;
+}
+.sidebarMenuInner li.heading {
+    padding: 7px 20px;
 }
 .sidebarMenuInner li.brand {
     display: flex;
     align-items: center;
-    font-size: 35px;
+    font-size: 43px;
+    font-family: 'Bosox';
     text-align: center;
     padding: 5px;
 }
@@ -132,19 +135,26 @@ Sidebar menu
     display: block;
     font-family: 'Futura';
     font-size: 12px;
-    color: #555;
+    color: #f8f8f8;
 }
-.sidebarMenuInner li.subMenu {
-    font-family: 'Futura';
-    font-size: 13px;
-    padding-left: 40px;
-}
-.sidebarMenuInner li a{
-    color: #333;
+.sidebarMenuInner li.subMenu a {
+    display: block;
+    color: #d9d9d9;
     cursor: pointer;
     text-decoration: none;
+    padding: 7px 40px;
 }
-
+.sidebarMenuInner li a{
+    display: block;
+    color: #d9d9d9;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 7px 20px; 
+}
+.sidebarMenuInner li a:hover {
+    color: #fff;
+    background-color: #FF7D00;
+}
 input[type="checkbox"]:checked ~ #sidebarMenu {
     transform: translateX(0);
 }
@@ -173,7 +183,7 @@ input[type=checkbox] {
     position: absolute;
     height: 3px;
     width: 100%;
-    background-color: #333;
+    background-color: #FFF;
 }
 .horizontal {
     transition: all 0.3s;
@@ -226,7 +236,7 @@ section.hero {
     background-size: cover;
     background-position: center;
     background-repeat: none;
-    color: #ffffff;
+    color: #FFFFFF;
 }
 #homeHero {
     border: none;
@@ -273,7 +283,7 @@ Divisions
 }
 .divisionAge span {
     background: #FF7D00;
-    color: #fff;
+    color: #FFF;
     padding: 5px 11px 7px;
     border-radius: 16px;
 }
