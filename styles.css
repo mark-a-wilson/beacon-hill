@@ -307,7 +307,7 @@ img.divisionDetails {
 Calendars 
 --------- */
 .calendarWrapper {
-    width: 50px;
+    width: 100%;
     margin: 30px auto;
     text-align: center;
     overflow-x: scroll;
