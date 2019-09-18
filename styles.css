@@ -121,15 +121,11 @@ Sidebar menu
     padding: 7px 20px;
 }
 .sidebarMenuInner li.brand {
-    display: flex;
-    align-items: center;
+    text-align: center;
     font-size: 43px;
     font-family: 'Bosox';
     text-align: center;
     padding: 5px;
-}
-.sidebarMenuInner li.brand img{
-    height: 50px;
 }
 .sidebarMenuInner li.brand span{
     display: block;
