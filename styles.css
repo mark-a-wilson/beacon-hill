@@ -96,6 +96,7 @@ Sidebar menu
 #sidebarMenu {
     height: 100%;
     position: fixed;
+    z-index: 2;
     left: 0;
     width: 315px;
     overflow-y: auto;
@@ -310,6 +311,8 @@ Calendars
     margin: 30px auto;
     text-align: center;
     overflow-x: scroll;
+    position: relative;
+    z-index: 1;
 }
 /* ------- 
 Video Background 
