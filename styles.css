@@ -314,6 +314,7 @@ Calendars
 Video Background 
 --------- */
 .background-wrap {
+    background-color: #000;
     position: fixed;
     z-index: -1000;
     width: 100%;
