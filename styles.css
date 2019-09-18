@@ -309,6 +309,7 @@ Calendars
     margin: 30px auto;
     text-align: center;
     overflow-x: scroll;
+    z-index: 50;
 }
 /* ------- 
 Video Background 
