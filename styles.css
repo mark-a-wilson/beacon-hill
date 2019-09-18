@@ -96,7 +96,6 @@ Sidebar menu
 #sidebarMenu {
     height: 100%;
     position: fixed;
-    z-index: 2;
     left: 0;
     width: 315px;
     overflow-y: auto;
