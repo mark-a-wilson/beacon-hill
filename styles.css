@@ -311,9 +311,6 @@ Calendars
     text-align: center;
     overflow-x: scroll;
 }
-.calendarWrapper iframe {
-    z-index: 1;
-}
 /* ------- 
 Video Background 
 --------- */
