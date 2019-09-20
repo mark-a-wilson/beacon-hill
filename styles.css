@@ -103,7 +103,7 @@ Sidebar menu
     overflow-y: auto;
     transform: translateX(-315px);
     transition: transform 250ms ease-in-out;
-    background: #262626;
+    background: #212121;
     -webkit-overflow-scrolling: touch;
 }
 .sidebarMenuInner{
@@ -112,7 +112,7 @@ Sidebar menu
 }
 .sidebarMenuInner li{
     list-style: none;
-    color: #cccccc;
+    color: rgba(255, 255, 255, 0.9);
     text-transform: uppercase;
     font-size: 16px;
     font-weight: normal;
@@ -137,22 +137,21 @@ Sidebar menu
 }
 .sidebarMenuInner li.subMenu a {
     display: block;
-    color: #cccccc;
+    color: rgba(255, 255, 255, 0.9);
     cursor: pointer;
     text-decoration: none;
     padding: 7px 40px;
 }
 .sidebarMenuInner li a{
     display: block;
-    color: #cccccc;
+    color: rgba(255, 255, 255, 0.9);
     cursor: pointer;
     text-decoration: none;
     padding: 7px 20px; 
 }
 .sidebarMenuInner li a:hover {
     color: #fff;
-//    background-color: rgba(255, 125, 0, 0.2);
-    background-color: #ff7d00;
+//    background-color: #ff7d00;
 }
 input[type="checkbox"]:checked ~ #sidebarMenu {
     transform: translateX(0);
