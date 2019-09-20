@@ -21,6 +21,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Futura', sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 .main {
     margin: 0 auto;
@@ -230,6 +231,7 @@ section {
 section.hero {
     height: 60vh;
     color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.40);
 }
 #today {
     background: #F8F8F8; 
@@ -239,13 +241,13 @@ section.hero {
 }
 .heroTextWrapper {
     display: table;
-    height: 80%;
+    height: 100%;
     max-width: 960px;
     margin: auto;
 }
 .heroText {
     display: table-cell;
-    vertical-align: bottom;        
+    vertical-align: middle;        
     text-align: center;
 }
 .heroOverline, .heroSubtitle {
@@ -254,15 +256,22 @@ section.hero {
     letter-spacing: 4px;
 }
 .heroSubtitle {
-    font-size: 25px;
-    margin: 0 20px 20px;
+    font-size: 1.4rem;
+    margin: 0 1rem 1rem;
 }
 .heroTitle {
-    margin: 30px 30px 10px;
+    margin: 2rem 1rem 1rem;
     font-family: 'Bosox';
-    font-size: 100px;
-    line-height: 1em;
+    letter-spacing: 2px;
+    font-size: 6rem;
+    line-height: 5rem;
     text-transform: uppercase; 
+}
+@media screen and (max-width: 374px) {
+    .heroTitle {
+        font-size: 4rem;
+        line-height: 3rem;
+    }
 }
 /* ------- 
 Divisions 
