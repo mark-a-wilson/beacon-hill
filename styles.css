@@ -369,7 +369,7 @@ Cards
 .card {
     padding: 1rem 2rem;
     text-align: center;
-    background-color: rgba(0, 67, 0, 0.06);
+    background-color: rgba(0, 67, 0, 0.1);
     border-radius: 4px;
 }
 .card-equipment {
