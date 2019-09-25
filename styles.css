@@ -373,7 +373,7 @@ Cards
 .card-locations, .card-time-commitment, .card-equipment {
     background-color: rgba(0, 67, 0, 0.1);
 }
-.card-locations, .card-time-commitment img {
+.card-locations img, .card-time-commitment img {
     height: 30px;
 }
 .card-equipment {
