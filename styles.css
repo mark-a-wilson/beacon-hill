@@ -370,10 +370,10 @@ Cards
     text-align: center;
     border-radius: 4px;
 }
-.card-location, .card-time-commitment {
+.card-locations, .card-time-commitment, .card-equipment {
     background-color: rgba(0, 67, 0, 0.1);
 }
-.card-location, .card-time-commitment img {
+.card-locations, .card-time-commitment img {
     height: 30px;
 }
 .card-equipment {
