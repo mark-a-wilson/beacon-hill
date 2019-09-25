@@ -309,21 +309,20 @@ Divisions
     line-height: 1.4;
     margin: auto;
 }
-table.divisionDetails tr td {
+table.equipment tr td {
     padding: 0.5rem 1rem;
     border-top: 2px solid #fff;
 }
-td.iconHolder {
+td.equipmentIcon {
     text-align: center;
     vertical-align: middle;
 }
-td.divisionDetails {
+td.equipmentIcon img {
+    width: 50px;
+}
+td.equipmentDetails {
     vertical-align: middle;
     text-align: left;
-}
-
-img.divisionDetails {
-    width: 50px;
 }
 /* ------- 
 Calendars 
@@ -369,8 +368,13 @@ Cards
 .card {
     padding: 1rem 2rem;
     text-align: center;
-    background-color: rgba(0, 67, 0, 0.1);
     border-radius: 4px;
+}
+.card-location, .card-time-commitment {
+    background-color: rgba(0, 67, 0, 0.1);
+}
+.card-location, .card-time-commitment img {
+    height: 30px;
 }
 .card-equipment {
     padding: 0.5rem;
