@@ -114,7 +114,7 @@ Sidebar menu
     list-style: none;
     color: rgba(255, 255, 255, 0.9);
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: normal;
     letter-spacing: 1px;
     cursor: default;
@@ -223,7 +223,8 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 Sections 
 ----------- */
 section {
-    padding: 60px 0;
+    padding: 30px 0;
+    background-color: #fff;
 }
 section.hero {
     height: 70vh;
@@ -235,6 +236,10 @@ section.banner {
     width: 100%;
     display: table;
     background-color: rgba(0, 0, 0, 0.40);
+}
+section.schedules {
+    background-color: #212121;
+    color: #fff;
 }
 .bannerTitle {
     display: table-cell;
@@ -304,22 +309,21 @@ Divisions
     line-height: 1.4;
     margin: auto;
 }
-table.divisionDetails {
-    margin: 30px 0;
-    font-size: 0.9em;
+table.divisionDetails tr td {
+    padding: 0.5rem 1rem;
+    border-top: 2px solid #fff;
 }
 td.iconHolder {
     text-align: center;
-    padding: 20px 0;
-    vertical-align: top;
+    vertical-align: middle;
 }
 td.divisionDetails {
-    padding: 20px 10px;
-    vertical-align: top;
+    vertical-align: middle;
+    text-align: left;
 }
 
 img.divisionDetails {
-    height: 40px;
+    width: 50px;
 }
 /* ------- 
 Calendars 
@@ -344,4 +348,45 @@ Video Background
     overflow: hidden;
     top: 0;
     left: 0;
+}
+/* ------- 
+Cards 
+--------- */
+.cardWrapper {
+    margin: 2rem 0;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+@media screen and (max-width: 430px) {
+    .cardWrapper {
+        margin-left: -20px !important; /* offsets container padding for cards with colored backgrounds */
+        margin-right: -20px !important;
+        grid-gap: 10px;
+        grid-template-columns: 1fr; 
+    }
+}
+.card {
+    padding: 1rem 2rem;
+    text-align: center;
+    background-color: rgba(0, 67, 0, 0.06);
+    border-radius: 4px;
+}
+.card-equipment {
+    padding: 0.5rem;
+}
+.card-img-background {
+    display: table;
+    padding: 14rem 0 0;
+    background-image: url('images/friends.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card-img-overlay {
+    display: table-cell;
+    vertical-align: bottom;
+    padding: 0 20px;
+    background-color: rgba(0, 0, 0, 0.70);
+    color: #fff;
 }
