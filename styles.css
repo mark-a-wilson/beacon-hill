@@ -41,25 +41,12 @@ body {
 .container-narrow {
     max-width: 700px;
 }
-.mainInner{
-    display: table;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-}
-.mainInner div{
-    display:table-cell;
-    vertical-align: middle;
-    font-size: 3em;
-    font-weight: bold;
-    letter-spacing: 1.25px;
-}
 hr {
     border-color: #000;
 }
-/* ----------------
+/* ----------------------
 Typography
----------------- */
+------------------------- */
 h1, h2, h3 {
     text-align: center;
     text-transform: uppercase;
@@ -71,9 +58,14 @@ h1 {
     margin-block-start: 0;
     margin-block-end: 0;
 }
-/* ----------------
+@media screen and (max-width: 430px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+}
+/* ----------------------
 Header
----------------- */
+------------------------- */
 .header {
     display: table;
     margin: 0 auto;
@@ -91,9 +83,9 @@ Header
     height: 50px;
     padding-top: 7px !important;
 }
-/* ----------------
+/* ----------------------
 Sidebar menu
----------------- */
+------------------------- */
 #sidebarMenu {
     height: 100%;
     position: fixed;
@@ -219,12 +211,18 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     transform: rotate(-135deg);
     margin-top: -9px;
 }
-/* ----------- 
-Sections 
------------ */
+
+/* ----------------------- 
+Section Styles 
+-------------------------- */
 section {
     padding: 30px 0;
     background-color: #fff;
+}
+section.bg-image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 section.hero {
     height: 70vh;
@@ -237,6 +235,7 @@ section.banner {
     display: table;
     background-color: rgba(0, 0, 0, 0.40);
 }
+
 section.schedules {
     background-color: #212121;
     color: #fff;
@@ -247,9 +246,7 @@ section.schedules {
     text-align: center;
     color: #fff;
 }
-#today {
-    background: #F8F8F8; 
-}
+
 #blastBall, #teeBall, #miniMinors, #minors, #majors {
     background: rgba(255, 125, 0, 0.1);
 }
@@ -287,9 +284,10 @@ section.schedules {
         line-height: 3rem;
     }
 }
-/* ------- 
-Divisions 
---------- */
+
+/* ---------------------- 
+Division Pages 
+------------------------- */
 .divisionAge {
     margin: 20px 0;
 }
@@ -324,9 +322,10 @@ td.equipmentDetails {
     vertical-align: middle;
     text-align: left;
 }
-/* ------- 
+
+/* ------------------------ 
 Calendars 
---------- */
+--------------------------- */
 .calendarWrapper {
     width: 100%;
     margin: 30px auto;
@@ -335,22 +334,32 @@ Calendars
     position: relative;
     z-index: 1;
 }
-/* ------- 
-Video Background 
---------- */
+
+/* ------------------------- 
+Video and Image Backgrounds 
+---------------------------- */
 .background-wrap {
     background-color: #000;
-    position: fixed;
-    z-index: -1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    position: fixed;
+    z-index: -1;
     top: 0;
     left: 0;
 }
-/* ------- 
+.video-bg-element, .img-bg-element {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ------------------------ 
 Cards 
---------- */
+--------------------------- */
 .cardWrapper {
     margin: 2rem 0;
     display: grid;
@@ -359,7 +368,7 @@ Cards
 }
 @media screen and (max-width: 430px) {
     .cardWrapper {
-        margin-left: -20px !important; /* offsets container padding for cards with colored backgrounds */
+        margin-left: -20px !important; /* offsets container padding */
         margin-right: -20px !important;
         grid-gap: 10px;
         grid-template-columns: 1fr; 
