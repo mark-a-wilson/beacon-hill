@@ -235,21 +235,19 @@ section.banner {
     display: table;
     background-color: rgba(0, 0, 0, 0.40);
 }
-
-section.schedules {
-    background-color: #212121;
-    color: #fff;
-}
 .bannerTitle {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
     color: #fff;
 }
-
-#blastBall, #teeBall, #miniMinors, #minors, #majors {
-    background: rgba(255, 125, 0, 0.1);
+section.schedules {
+    background-color: #212121;
+    color: #fff;
 }
+
+/* Insert specific background images to section.hero or section.banner IDs here... */
+
 .heroTextWrapper {
     display: table;
     height: 100%;
