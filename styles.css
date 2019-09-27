@@ -67,10 +67,8 @@ h1 {
 Header
 ------------------------- */
 .header {
-    display: table;
-    margin: 0 auto;
+    display: flex;
     width: 100%;
-    max-width: 100%;
     background: #212121;
     position: fixed;
     height: 60px!important;
@@ -78,7 +76,6 @@ Header
     z-index: 10;
 }
 .header img {
-    display: table-cell;
     margin: auto;
     height: 50px;
     padding-top: 7px !important;
