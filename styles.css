@@ -244,6 +244,10 @@ section.schedules {
 }
 
 /* Insert specific background images to section.hero or section.banner IDs here... */
+section#sponsor {
+    background-image: url(images/sponsor-banners.jpg);
+}
+
 
 .heroTextWrapper {
     display: table;
