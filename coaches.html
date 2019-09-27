@@ -6,65 +6,19 @@
     <meta name="author" content="Adtile">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
   </head>
+  
   <body>
-    <div class="header">
-      <img src="images/logo-blackbg.png">
-    </div>
-    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-    <label for="openSidebarMenu" class="sidebarIconToggle">
-      <div class="spinner diagonal part-1"></div>
-      <div class="spinner horizontal"></div>
-      <div class="spinner diagonal part-2"></div>
-    </label>
-    <div id="sidebarMenu">
-      <ul class="sidebarMenuInner">
-        <li class="brand">
-          <img src="images/logo-blackbg.png" height="30px">
-          <div>Beacon Hill<span class="brand">Baseball &amp; Softball Association</span></div>
-        </li>
-        <hr>
-        <li><a href="index.html">Home</a></li> 
-        <li class="subMenu"><a href="index.html#news">News</a></li> 
-        <hr>
-        <li><a href="registration.html">Registration</a></li> 
-        <hr>
-        <li><a href="calendars.html">Calendars 📅</a></li> 
-        <hr>
-        <li><a href="softball.html">Softball 🥎</a></li>
-        <li class="subMenu"><a href="u10-softball.html">U10</a></li>
-        <li class="subMenu"><a href="u12-softball.html">U12</a></li>
-        <li class="subMenu"><a href="u14-softball.html">U14</a></li>
-        <hr>
-        <li>Baseball ⚾</li>
-        <li class="subMenu"><a href="blast-ball.html">Blast Ball</a></li>
-        <li class="subMenu"><a href="tee-ball.html">Tee Ball</a></li>
-        <li class="subMenu"><a href="mini-minors.html">Mini Minors</a></li>
-        <li class="subMenu"><a href="minors-baseball.html">Minors</a></li>
-        <li class="subMenu"><a href="majors-baseball.html">Majors</a></li>
-        <li class="subMenu"><a href="victoria-capitals.html">Victoria Capitals</a></li>
-        <hr>
-        <li><a href="coaches.html">Coaches</a></li>
-        <hr>
-        <li><a href="umpires.html">Umpires</a></li>
-        <hr>
-        <li><a href="scorekeepers.html">Scorekeepers</a></li>
-        <hr>
-        <li>About</li>
-        <li class="subMenu">History</li>
-        <li class="subMenu">Parks</li>
-        <li class="subMenu">Concession 🌭</li>
-        <li class="subMenu">Board of Directors</li>
-        <li class="subMenu">Contact</li>
-      </ul>
-    </div>
-    
-    <div id='center' class="main">
-      <section id="coaches">
-        <div class="container">
-          <h1>Coaches</h1>
-        </div>
-      </section>
-    </div>
+    <div id="header" class="header"></div>
+    <div id="sidebarNav"></div>  
+    <div id='pageContent' class="main"></div>
+    <script>
+      $(document).ready(function() {
+          $('#header').load('includes/header.html');
+          $('#sidebarNav').load('includes/sidebarNav.html');
+          $('#pageContent').load('page-content/coaches-content.html');
+      });
+    </script>
   </body>
 </html>
