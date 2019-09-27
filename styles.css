@@ -398,3 +398,18 @@ Cards
     background-color: rgba(0, 0, 0, 0.70);
     color: #fff;
 }
+/* --------------------------------
+Sponsors
+----------------------------------- */
+.sponsor-logo-grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 2rem;
+}
+.sponsor-logo-grid div {
+    margin: auto;
+}
+.sponsor-logo-grid div a img {
+    max-width: 150px;
+}
