@@ -86,7 +86,7 @@ Sidebar menu
 #sidebarMenu {
     height: 100%;
     position: fixed;
-    z-index: 2;
+    z-index: 5;
     left: 0;
     width: 315px;
     overflow-y: auto;
@@ -456,6 +456,9 @@ Registration Page
     margin: auto;
     margin-bottom: 1rem;
 }
+.closed {
+    opacity: 0.5;
+}
 .sessionTitle {
     font-weight: bold;
     font-size: 1.7rem;
@@ -498,6 +501,20 @@ td.sessionDetails {
 .sessionDescription {
     text-align: left;
 }
+.registration-closed-stamp {
+    color: red;
+    transform: rotate(-3deg);
+    width: 50%;
+    position: relative;
+    bottom: -35px;
+    left: 20px;
+    z-index: 2;
+}
+.registration-closed-stamp span {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 /* ----------------------------------
 Buttons
 ------------------------------------- */
