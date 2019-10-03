@@ -12,11 +12,6 @@ html, body {
     overflow-x: hidden;
     height: 100%;
 }
-html {
-  scroll-behavior: auto;
-  -webkit-overflow-scrolling: touch;
-
-}
 body {
     padding: 0;
     margin: 0;
@@ -99,7 +94,7 @@ Sidebar menu
     overflow-y: auto;
     transform: translateX(-315px);
     transition: transform 250ms ease-in-out;
-    background: #212121;
+    background: #333333;
     -webkit-overflow-scrolling: touch;
 }
 .sidebarMenuInner{
@@ -350,7 +345,6 @@ Video and Image Backgrounds
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
     position: fixed;
     z-index: -1;
     top: 0;
@@ -540,7 +534,54 @@ Buttons
 .btn:hover {
     background-color: #ffa34d;
 }
+/* ----------------------------------
+News Items
+------------------------------------- */
+.news-item {
+    margin: 2rem 0;
+}
+.news-item > .img > img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.news-item > .content {
+    padding: 0 20px;
+}
+.news-item > .content > .title {
+    color: rgb(21, 21, 21);
+    font-size: 1.875em;
+    font-weight: bold;
+}
+.news-item > .date {
+    font-size: 0.875rem;
+    line-height: 1rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: rgba(21, 21, 21, 0.3);
+}
+@media (min-width: 430px) {
 
+    .news-item {
+        display: grid;
+        grid-column-gap: 30px;
+        grid-template-columns: minmax(200px, 300px), 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+            "img bd"
+            "img bd"
+            "img ft";
+    }
+    .news-item > .img { grid-area: img; }
+    .news-item > .content { grid-area: bd; }
+    .news-item > .date { grid-area: ft; }
+}
+@media (min-width: 1000px) {
+    .news-item {
+        max-width: 80%;
+        margin: auto;
+    }
+}
 
 
 
