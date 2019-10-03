@@ -352,6 +352,9 @@ Video and Image Backgrounds
     height: 50vh;
     margin-top: 55px;
 }
+.background-wrap-hero {
+    height: calc(70vh + 120px);
+}
 .video-bg-element, .img-bg-element {
     position: relative;
     width: 100%;
