@@ -349,6 +349,8 @@ Video and Image Backgrounds
     z-index: -1;
     top: 0;
     left: 0;
+    height: 50vh;
+    margin-top: 55px;
 }
 .video-bg-element, .img-bg-element {
     position: relative;
