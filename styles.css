@@ -79,10 +79,6 @@ Header
     z-index: 10;
     background: rgba(255, 255, 255, 0.4);
 }
-.header img {
-    margin: 6px auto auto;
-    height: 70px;
-}
 /* ----------------------
 Sidebar menu
 ------------------------- */
@@ -95,13 +91,13 @@ Sidebar menu
     width: 100%;
     overflow-y: auto;
     transform: translateX(-100%);
-    transition: transform 600ms ease-in-out;
-    background: #f2f9eb;
+    transition: transform 400ms ease-in-out;
+    background: #fff;
     color: #000;
 }
 .sidebarMenuInner{
     margin:0;
-    padding: 65px 0 50px;
+    padding: 0 0 50px;
 }
 .sidebarMenuInner li{
     list-style: none;
@@ -123,7 +119,10 @@ Sidebar menu
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background: #f2f9eb;
+    background: #fff;
+}
+.sidebarMenuInner li.brand > img {
+    height: 40px;
 }
 .sidebarMenuInner li.brand span{
     display: block;
