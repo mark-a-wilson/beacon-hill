@@ -163,16 +163,16 @@ input[type=checkbox] {
     z-index: 99;
     height: 100%;
     width: 100%;
-    top: 30px;
-    left: 20px;
-    height: 30px;
-    width: 30px;
+    top: 22px;
+    left: 15px;
+    height: 22px;
+    width: 22px;
 }
 .spinner {
     transition: all 0.3s;
     box-sizing: border-box;
     position: absolute;
-    height: 4px;
+    height: 3px;
     width: 100%;
     background-color: #000;
 }
@@ -181,7 +181,7 @@ input[type=checkbox] {
     box-sizing: border-box;
     position: relative;
     float: left;
-    margin-top: 4px;
+    margin-top: 3px;
 }
 .diagonal.part-1 {
     position: relative;
@@ -194,7 +194,7 @@ input[type=checkbox] {
     box-sizing: border-box;
     position: relative;
     float: left;
-    margin-top: 4px;
+    margin-top: 3px;
 }
 input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
     transition: all 0.3s;
@@ -204,14 +204,14 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
 input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
     transition: all 0.3s;
     box-sizing: border-box;
-    transform: rotate(132deg);
-    margin-top: 1px;
+    transform: rotate(135deg);
+    margin-top: 8px;
 }
 input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     transition: all 0.3s;
     box-sizing: border-box;
-    transform: rotate(-132deg);
-    margin-top: -11px;
+    transform: rotate(-135deg);
+    margin-top: -9px;
 }
 
 /* ----------------------- 
