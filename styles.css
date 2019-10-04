@@ -72,7 +72,6 @@ h1 {
 Header
 ------------------------- */
 .header {
-    position: relative;
     display: flex;
     width: 100%;
     height: 60px;
@@ -99,7 +98,6 @@ Sidebar menu
     transition: transform 600ms ease-in-out;
     background: #f2f9eb;
     color: #000;
-    -webkit-overflow-scrolling: touch;
 }
 .sidebarMenuInner{
     margin:0;
