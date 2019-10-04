@@ -6,8 +6,8 @@ Fonts
   src:  url('Bosox.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Bosox Outline Heavy';
-  src:  url('Bosox Outline Heavy.ttf') format('truetype');
+  font-family: 'Bosox Full';
+  src:  url('Bosox Full.ttf') format('truetype');
 }
 /* ----------------
 Layout
@@ -270,7 +270,7 @@ section#sponsor {
     text-align: center;
 }
 .heroText > img {
-    height: 160px;
+    height: 120px;
     margin-bottom: 10px;
 }
 .heroOverline, .heroSubtitle {
@@ -284,9 +284,9 @@ section#sponsor {
 }
 .heroTitle {
     margin: 2rem 1rem 1rem;
-    font-family: 'Bosox Outline Heavy';
+    font-family: 'Bosox Full';
     letter-spacing: 2px;
-    font-size: 6rem;
+    font-size: 7rem;
     line-height: 5rem;
     text-transform: uppercase; 
 }
