@@ -9,7 +9,6 @@
   </head>
   <body>
     <div class="header">
-      <img src="logos/bh-logo-blackbg.png">
       <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
       <label for="openSidebarMenu" class="sidebarIconToggle">
         <div class="spinner diagonal part-1"></div>
@@ -19,42 +18,50 @@
       <div id="sidebarMenu">
         <ul class="sidebarMenuInner">
           <li class="brand">
-            <img src="logos/bh-logo-orangebg.png">
-            <div>Beacon Hill<span class="brand">Baseball &amp; Softball Association</span></div>
+              <img src="logos/bh-logo-blackbg.png">
+              <div>Beacon Hill<span class="brand">Baseball &amp; Softball Association</span></div>
           </li>
-          
-          <li><a href="index.html">Home</a></li> 
-          <li class="subMenu"><a href="index.html#news">News</a></li> 
-          
-          <li><a href="registration.html">Registration</a></li> 
-          
-          <li><a href="calendars.html">Calendars 📅</a></li> 
-          
-          <li><a href="softball.html">Softball 🥎</a></li>
-          <li class="subMenu"><a href="u10-softball.html">U10</a></li>
-          <li class="subMenu"><a href="u12-softball.html">U12</a></li>
-          <li class="subMenu"><a href="u14-softball.html">U14</a></li>
-          
-          <li>Baseball ⚾</li>
-          <li class="subMenu"><a href="blast-ball.html">Blast Ball</a></li>
-          <li class="subMenu"><a href="tee-ball.html">Tee Ball</a></li>
-          <li class="subMenu"><a href="mini-minors.html">Mini Minors</a></li>
-          <li class="subMenu"><a href="minors-baseball.html">Minors</a></li>
-          <li class="subMenu"><a href="majors-baseball.html">Majors</a></li>
-          <li class="subMenu"><a href="victoria-capitals.html">Victoria Capitals</a></li>
-          
-          <li><a href="coaches.html">Coaches</a></li>
-          
-          <li><a href="umpires.html">Umpires</a></li>
-          
-          <li><a href="scorekeepers.html">Scorekeepers</a></li>
-          
-          <li>About</li>
-          <li class="subMenu">History</li>
-          <li class="subMenu">Parks</li>
-          <li class="subMenu">Concession 🌭</li>
-          <li class="subMenu">Board of Directors</li>
-          <li class="subMenu">Contact</li>
+          <div class="sidebarMenu-wrapper">
+              <div class="sidebarMenu-section">
+                  <li><a href="index.html">Home</a></li> 
+                  <li><a href="index.html#news">News</a></li> 
+                  <li><a href="registration.html">Registration</a></li> 
+                  <li><a href="schedules.html">Schedules 📅</a></li>
+              </div> 
+              <div class="sidebarMenu-section">
+                  <li class="heading">Softball 🥎</li>
+                  <li><a href="transition-to-softball-bc.html">Transition to Softball BC</a></li>
+                  <li><a href="u10-softball.html">U10</a></li>
+                  <li><a href="u12-softball.html">U12</a></li>
+                  <li><a href="u14-softball.html">U14</a></li>
+              </div>
+              <div class="sidebarMenu-section">
+                  <li class="heading">Baseball ⚾</li>
+                  <li><a href="blast-ball.html">Blast Ball</a></li>
+                  <li><a href="tee-ball.html">Tee Ball</a></li>
+                  <li><a href="mini-minors.html">Mini Minors</a></li>
+                  <li><a href="minors-baseball.html">Minors</a></li>
+                  <li><a href="majors-baseball.html">Majors</a></li>
+                  <li><a href="victoria-capitals.html">Victoria Capitals</a></li>
+              </div>
+              <div class="sidebarMenu-section">
+                  <li class="heading">Volunteers</li>
+                  <li><a href="coaches.html">Coaches</a></li>
+                  <li><a href="umpires.html">Umpires</a></li>
+                  <li><a href="scorekeepers.html">Scorekeepers</a></li>
+              </div>
+              <div class="sidebarMenu-section">
+                  <li class="heading">Sponsors</li>
+                  <li><a href="become-a-sponsor.html">Become a Sponsor</a></li>
+              </div>
+              <div class="sidebarMenu-section">
+                  <li class="heading">About</li>
+                  <li><a href="about-us.html">About Us</a></li>
+                  <li><a href="parks-and-facilities.html">Parks &amp; Facilities </a></li>
+                  <li><a href="board-of-directors.html">Board of Directors</a></li>
+                  <li><a href="contact-us.html">Contact Us</a></li>
+              </div>
+          </div>
         </ul>
       </div>
     </div>
@@ -63,19 +70,20 @@
       <section>
         <div class="schedules-wrapper">
           <div class="schedules-menu">
+            <img src="logos/bh-logo-blackbg.png">
             <div>Schedules</div>
-            <a href="#masterSchedule">Master Game Schedule</a>
-            <a href="#hollywoodSchedule">Hollywood Park</a>
-            <a href="#pembertonSchedule">Pemberton Park</a>
-            <a href="#battingCageSchedule">Batting Cage</a>
-            <a href="#u10SoftballSchedule">U10 Softball</a>
-            <a href="#u12SoftballSchedule">U12 Softball</a>
-            <a href="#u14SoftballSchedule">U14 Softball</a>
-            <a href="#blastBallSchedule">Blast Ball</a>
-            <a href="#teeBallSchedule">Tee-Ball</a>
-            <a href="#miniMinorsSchedule">Mini Minors</a>
-            <a href="#minorsBaseballSchedule">Minors Baseball</a>
-            <a href="#majorsBaseballSchedule">Majors Baseball</a>
+            <li><a href="#masterSchedule">Master Game Schedule</a></li>
+            <li><a href="#hollywoodSchedule">Hollywood Park</a></li>
+            <li><a href="#pembertonSchedule">Pemberton Park</a></li>
+            <li><a href="#battingCageSchedule">Batting Cage</a></li>
+            <li><a href="#u10SoftballSchedule">U10 Softball</a></li>
+            <li><a href="#u12SoftballSchedule">U12 Softball</a></li>
+            <li><a href="#u14SoftballSchedule">U14 Softball</a></li>
+            <li><a href="#blastBallSchedule">Blast Ball</a></li>
+            <li><a href="#teeBallSchedule">Tee-Ball</a></li>
+            <li><a href="#miniMinorsSchedule">Mini Minors</a></li>
+            <li><a href="#minorsBaseballSchedule">Minors Baseball</a></li>
+            <li><a href="#majorsBaseballSchedule">Majors Baseball</a></li>
           </div>
           
           <div class="schedules-body">

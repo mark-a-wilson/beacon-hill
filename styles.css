@@ -104,7 +104,7 @@ Sidebar menu
     max-width: 900px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr) ) ;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) ) ;
     column-gap: 35px;
 }
 .sidebarMenu-section {
@@ -615,7 +615,7 @@ News Items
 Schedules Page
 ------------------------------------- */
 .schedules-wrapper {
-    min-width: 880px;
+    min-width: 700px;
     max-width: 1180px;
     padding: 0 20px;
     margin: auto;
@@ -627,35 +627,41 @@ Schedules Page
     position: sticky;
     top: 60px;
 }
-.schedules-menu > div {
-    font-size: 2.2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 1rem 0.5rem;
+.schedules-menu > img {
+    height: 50px;
+    margin: 0 0 -10px 17px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 10px 3px rgba(0, 0, 0, 0.6);
 }
-.schedules-menu > a {
-    display: block;
-    padding: .5rem;
-    border-radius: 4px;
+.schedules-menu > div {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 15px 0;
+}
+.schedules-menu > li {
+    list-style: none;
+    padding: 5px 0;
+}
+.schedules-menu > li > a {
     text-decoration: none;
     color: rgba(0, 0, 0, 1);
 }
-.schedules-menu > a:hover {
+.schedules-menu > li > a:hover {
     color: rgba(0, 0, 0, 0.7);
     cursor: pointer;
 }
 .schedules-body {
-    width: 68%;
+    width: 65%;
     margin-left: auto;
 }
 .schedules-body > .schedule-item {
-    padding-top: 70px;
+    padding-top: 72px;
 }
 .schedules-body > .schedule-item > div {
     padding: 1rem;
     border-radius: 8px;
 }
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 739px) {
     .schedules-wrapper {
         width: 100%;
         min-width: auto;
@@ -668,6 +674,9 @@ Schedules Page
         float: none;
         text-align: center;
     }
+    .schedules-menu > img {
+        margin: 0;
+    }
     .schedules-body {
         position: relative;
         width: 100%;
@@ -675,18 +684,22 @@ Schedules Page
     }
     .schedules-body > .schedule-item {
         position: relative;
+        padding-top: 0;
     }
     .schedules-body > .schedule-item > div {
         position: relative;
-        padding: 10px 0;
+        padding: 0;
         border-radius: 0;
     }
     .schedules-body > .schedule-item > div > h2 {
         position: -webkit-sticky;
         position: sticky;
-        top: 60px;
+        top: 0;
         font-size: 1.2rem;
-        background: #333;
+        background: #000;
+        color: #fff;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
         padding: 10px 20px;
         z-index: 3;
     }
