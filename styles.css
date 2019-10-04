@@ -440,6 +440,10 @@ Sponsors
 .sponsor-logo-grid div {
     margin: auto;
 }
+.sponsor-logo-grid div a:hover {
+    position: relative;
+    top: -3px;
+}
 .sponsor-logo-grid div a img {
     max-width: 150px;
 }
