@@ -99,29 +99,39 @@ Sidebar menu
     margin:0;
     padding: 0 0 50px;
 }
+.sidebarMenu-wrapper {
+    padding: 0 20px;
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr) ) ;
+    column-gap: 35px;
+}
+.sidebarMenu-section {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
 .sidebarMenuInner li{
     list-style: none;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: normal;
     letter-spacing: 1px;
     cursor: default;
+    padding: 5px 0;
 }
 .sidebarMenuInner li.heading {
-    padding: 7px 20px;
+    font-weight: bold;
 }
 .sidebarMenuInner li.brand {
     text-align: center;
     font-size: 28px;
     font-family: 'Bosox';
     text-align: center;
+    text-transform: uppercase;
     padding: 20px 0;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     background: #fff;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    margin-bottom: 15px;
 }
 .sidebarMenuInner li.brand > img {
     height: 40px;
@@ -131,18 +141,10 @@ Sidebar menu
     font-family: 'Futura';
     font-size: 12px;
 }
-.sidebarMenuInner li.subMenu a {
-    display: block;
-    cursor: pointer;
-    text-decoration: none;
-    padding: 7px 40px;
-}
 .sidebarMenuInner li a{
-    display: block;
     cursor: pointer;
     color: #000;
     text-decoration: none;
-    padding: 7px 20px; 
 }
 .sidebarMenuInner li a:hover {
     color: rgba(0, 0, 0, 0.7);
@@ -165,7 +167,7 @@ input[type=checkbox] {
     height: 100%;
     width: 100%;
     top: 22px;
-    left: 15px;
+    left: 20px;
     height: 22px;
     width: 22px;
 }
