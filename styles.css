@@ -662,6 +662,7 @@ Schedules Page
         width: 100%;
         min-width: auto;
         padding: 0;
+        margin-top: -80px;
     }
     .schedules-menu {
         position: relative;
