@@ -273,6 +273,7 @@ section#sponsor {
 .heroText > img {
     height: 120px;
     margin-bottom: 10px;
+    box-shadow: 0px 2px 10px 3px rgba(0, 0, 0, 0.6);
 }
 .heroOverline, .heroSubtitle {
     font-family: 'Futura';
@@ -288,20 +289,20 @@ section#sponsor {
     margin: 1rem;
     font-family: 'Bosox Full';
     letter-spacing: 2px;
-    font-size: 8rem;
-    line-height: 6rem;
+    font-size: 7rem;
+    line-height: 5rem;
     text-transform: uppercase; 
 }
 @media screen and (max-width: 374px) {
     .heroTitle {
-        font-size: 7rem;
-        line-height: 5rem;
+        font-size: 6rem;
+        line-height: 4rem;
     }
     .heroSubtitle {
         font-size: 1rem;
     }
     .heroText > img {
-        height: 90px;
+        height: 80px;
     }
 }
 
