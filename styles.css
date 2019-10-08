@@ -77,7 +77,6 @@ Header
     height: 60px;
     overflow: hidden;
     z-index: 10;
-    background: rgba(255, 255, 255, 0.4);
 }
 /* ----------------------
 Sidebar menu
@@ -178,6 +177,7 @@ input[type=checkbox] {
     height: 3px;
     width: 100%;
     background-color: #000;
+    color: #fff;
 }
 .horizontal {
     transition: all 0.3s;
@@ -209,12 +209,14 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
     box-sizing: border-box;
     transform: rotate(135deg);
     margin-top: 8px;
+    color: #000;
 }
 input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     transition: all 0.3s;
     box-sizing: border-box;
     transform: rotate(-135deg);
     margin-top: -9px;
+    color: #000;
 }
 
 /* ----------------------- 
@@ -229,20 +231,26 @@ section.bg-image {
     background-size: cover;
     background-repeat: no-repeat;
 }
+section.hero, section.banner {
+    display: table;
+    width: 100%;
+    padding: 0; 
+    margin-top: -60px !important;
+    background-color: #000;
+    color: #fff;
+}
 section.hero {
-    height: 70vh;
-    background: rgba(255, 255, 255, 0.4);
+    height: 70vh;    
 }
 section.banner {
     height: 35vh;
-    width: 100%;
-    display: table;
-    background: rgba(255, 255, 255, 0.4);
 }
-.bannerTitle {
+.bannerTitle, .heroText {
     display: table-cell;
-    vertical-align: top;
+    height: 100%;
+    vertical-align: middle;
     text-align: center;
+    background: rgba(0, 0, 0, 0.5);
 }
 .bannerTitle > img {
     height: 90px;
@@ -252,24 +260,6 @@ section.banner {
 section.schedules {
     background-color: #212121;
     color: #fff;
-}
-
-/* Insert specific background images to section.hero or section.banner IDs here... */
-section#sponsor {
-    background-image: url(images/sponsor-banners.jpg);
-}
-
-
-.heroTextWrapper {
-    display: table;
-    height: 100%;
-    max-width: 960px;
-    margin: auto;
-}
-.heroText {
-    display: table-cell;
-    vertical-align: middle;        
-    text-align: center;
 }
 .heroText > img {
     height: 120px;
@@ -306,6 +296,11 @@ section#sponsor {
     .heroText > img {
         height: 80px;
     }
+}
+/* Insert specific background images to section.hero or section.banner IDs here... */
+section#sponsor {
+    background-image: url(images/sponsor-banners.jpg);
+    background-size: cover;
 }
 
 /* ---------------------- 
