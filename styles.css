@@ -176,8 +176,7 @@ input[type=checkbox] {
     position: absolute;
     height: 3px;
     width: 100%;
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
 }
 .horizontal {
     transition: all 0.3s;
@@ -185,12 +184,14 @@ input[type=checkbox] {
     position: relative;
     float: left;
     margin-top: 3px;
+    background-color: #fff;
 }
 .diagonal.part-1 {
     position: relative;
     transition: all 0.3s;
     box-sizing: border-box;
     float: left;
+    background-color: #fff;
 }
 .diagonal.part-2 {
     transition: all 0.3s;
@@ -198,6 +199,7 @@ input[type=checkbox] {
     position: relative;
     float: left;
     margin-top: 3px;
+    background-color: #fff;
 }
 input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
     transition: all 0.3s;
@@ -209,14 +211,14 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
     box-sizing: border-box;
     transform: rotate(135deg);
     margin-top: 8px;
-    color: #000;
+    background-color: #000;
 }
 input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     transition: all 0.3s;
     box-sizing: border-box;
     transform: rotate(-135deg);
     margin-top: -9px;
-    color: #000;
+    background-color: #000;
 }
 
 /* ----------------------- 
@@ -236,7 +238,6 @@ section.hero, section.banner {
     width: 100%;
     padding: 0; 
     margin-top: -60px !important;
-    background-color: #000;
     color: #fff;
 }
 section.hero {
