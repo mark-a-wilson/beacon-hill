@@ -239,7 +239,7 @@ section.hero, section.banner {
     padding: 0; 
     margin-top: -60px !important;
     color: #fff;
-    background-color: transparent;
+    background: transparent;
 }
 section.hero {
     height: 70vh;    
