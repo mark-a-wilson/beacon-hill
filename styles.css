@@ -560,7 +560,7 @@ Buttons
 News Items
 ------------------------------------- */
 .news-item {
-    margin: 2rem 0;
+    padding: 15px;
 }
 .news-item > .img > img {
     object-fit: cover;
@@ -568,25 +568,29 @@ News Items
     width: 100%;
 }
 .news-item > .content {
-    padding: 0 20px;
 }
 .news-item > .content > .title {
     color: rgb(21, 21, 21);
-    font-size: 1.875em;
+    font-size: 1.7em;
     font-weight: bold;
+    line-height: 1.1;
+    margin: 0.5rem 0;
 }
-.news-item > .date {
+.news-item > .content > .date {
     font-size: 0.875rem;
     line-height: 1rem;
     font-weight: 500;
     margin-bottom: 6px;
-    color: rgba(21, 21, 21, 0.3);
+    color: rgba(21, 21, 21, 0.5);
+}
+.news-item > .content > p {
+    color: rgba(21, 21, 21, 0.7);
 }
 @media (min-width: 430px) {
 
     .news-item {
         display: grid;
-        grid-column-gap: 30px;
+        grid-column-gap: 20px;
         grid-template-columns: minmax(200px, 300px), 1fr;
         grid-template-rows: auto 1fr auto;
         grid-template-areas:
@@ -659,7 +663,6 @@ Schedules Page
         width: 100%;
         min-width: auto;
         padding: 0;
-        margin-top: -80px;
     }
     .schedules-menu {
         position: relative;
