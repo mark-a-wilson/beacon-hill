@@ -439,6 +439,7 @@ Sponsors
 }
 .sponsor-logo-grid div a img {
     max-width: 150px;
+    max-height: 50px;
 }
 /* ----------------------------------
 Registration Page
