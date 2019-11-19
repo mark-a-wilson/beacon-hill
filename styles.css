@@ -306,6 +306,11 @@ section#homeHero {
     background-size: cover;
     background-position: center;
 }
+section#blastBall {
+    background-image: url(images/blastball-banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
 section#sponsor {
     background-image: url(images/sponsor-banners.jpg);
     background-size: cover;
