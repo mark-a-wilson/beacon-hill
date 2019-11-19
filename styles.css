@@ -311,6 +311,11 @@ section#blastBall {
     background-size: cover;
     background-position: center;
 }
+section#u12Softball {
+    background-image: url(images/u12-softball-banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
 section#sponsor {
     background-image: url(images/sponsor-banners.jpg);
     background-size: cover;
