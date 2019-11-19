@@ -243,7 +243,7 @@ section.hero, section.banner {
     background: transparent;
 }
 section.hero {
-    height: 70vh;    
+    height: 90vh;    
 }
 section.banner {
     height: 35vh;
@@ -297,7 +297,7 @@ section.schedules {
         font-size: 1rem;
     }
     .heroText > img {
-        height: 60px;
+        height: 90px;
     }
 }
 /* Insert specific background images to section.hero or section.banner IDs here... */
