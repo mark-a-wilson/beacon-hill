@@ -229,7 +229,7 @@ section {
 section.light-gray {
     background-color: rgba(0, 0, 0, 0.05);
 }
-section.bg-image {
+section.bg-image, section.hero {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
