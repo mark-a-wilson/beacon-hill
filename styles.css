@@ -365,7 +365,7 @@ Calendars
     width: 85%;
     margin: 10px auto 40px;
     text-align: center;
-    overflow: hidden;
+    overflow: auto;
 }
 .calendar-wrapper:last-child {
     margin: 10px auto;
