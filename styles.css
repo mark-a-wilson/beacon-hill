@@ -304,6 +304,7 @@ section.schedules {
 section#homeHero {
     background-image: url(images/pitcher.jpg);
     background-size: cover;
+    background-position: center;
 }
 section#sponsor {
     background-image: url(images/sponsor-banners.jpg);
