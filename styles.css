@@ -288,16 +288,16 @@ section.schedules {
     line-height: 5rem;
     text-transform: uppercase; 
 }
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 415px) {
     .heroTitle {
-        font-size: 6rem;
-        line-height: 4rem;
+        font-size: 4rem;
+        line-height: 3rem;
     }
     .heroSubtitle {
         font-size: 1rem;
     }
     .heroText > img {
-        height: 80px;
+        height: 60px;
     }
 }
 /* Insert specific background images to section.hero or section.banner IDs here... */
