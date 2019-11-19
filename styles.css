@@ -312,6 +312,9 @@ section#teeBall {
 section#minorsBaseball {
     background-image: url(images/minors-banner.jpg);
 }
+section#transitionToSoftballBC {
+    background-image: url(images/u12-softball-banner.jpg);
+}
 section#u12Softball {
     background-image: url(images/u12-softball-banner.jpg);
 }
