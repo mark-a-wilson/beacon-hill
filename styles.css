@@ -229,7 +229,7 @@ section {
 section.light-gray {
     background-color: rgba(0, 0, 0, 0.05);
 }
-section.bg-image, section.hero {
+section.bg-image {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -240,7 +240,6 @@ section.hero, section.banner {
     padding: 0; 
     margin-top: -60px !important;
     color: #fff;
-    background: transparent;
 }
 section.hero {
     height: 90vh;    
@@ -303,36 +302,24 @@ section.schedules {
 /* Insert specific background images to section.hero or section.banner IDs here... */
 section#homeHero {
     background-image: url(images/pitcher.jpg);
-    background-size: cover;
-    background-position: center;
 }
 section#blastBall {
     background-image: url(images/blastball-banner.jpg);
-    background-size: cover;
-    background-position: center;
 }
 section#teeBall {
     background-image: url(images/tee-ball-banner.jpg);
-    background-size: cover;
-    background-position: center;
 }
 section#minorsBaseball {
     background-image: url(images/minors-banner.jpg);
-    background-size: cover;
-    background-position: center;
 }
 section#u12Softball {
     background-image: url(images/u12-softball-banner.jpg);
-    background-size: cover;
-    background-position: center;
 }
 section#sponsor {
     background-image: url(images/sponsor-banners.jpg);
-    background-size: cover;
 }
 section#schedules {
     background-image: url(images/calder.jpg);
-    background-size: cover;
 }
 
 /* ---------------------- 
