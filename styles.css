@@ -303,8 +303,16 @@ section.schedules {
     }
 }
 /* Insert specific background images to section.hero or section.banner IDs here... */
+section#homeHero {
+    background-image: url(images/pitcher.jpg);
+    background-size: cover;
+}
 section#sponsor {
     background-image: url(images/sponsor-banners.jpg);
+    background-size: cover;
+}
+section#schedules {
+    background-image: url(images/calder.jpg);
     background-size: cover;
 }
 
