@@ -303,6 +303,9 @@ section.schedules {
 section#homeHero {
     background-image: url(images/pitcher.jpg);
 }
+section#registration {
+    background-image: url(images/registration-banner.jpg);
+}
 section#blastBall {
     background-image: url(images/blastball-banner.jpg);
 }
