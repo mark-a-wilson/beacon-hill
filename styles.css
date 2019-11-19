@@ -252,6 +252,8 @@ section.form-header {
 }
 section.form-header > img {
     height: 50px;
+    display: table-cell;
+    vertical-align: middle;
 }
 .bannerTitle, .heroText {
     display: table-cell;
