@@ -622,7 +622,7 @@ News Items
 
     .news-item {
         display: grid;
-        grid-column-gap: 20px;
+        grid-column-gap: 50px;
         grid-template-columns: minmax(200px, 300px), 1fr;
         grid-template-rows: auto 1fr auto;
         grid-template-areas:
