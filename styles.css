@@ -735,15 +735,8 @@ Sticky Left Menu
         font-size: 0.9rem;
     }
 }
-/*----------------------
-Slideshow
---------------------- */
-.slideshow {
-    object-fit: cover;
-}
-.slideshow img {
-    width: 100%;
-}
+
+
 
 
 
